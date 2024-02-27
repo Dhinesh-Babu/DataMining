@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<Title_Mr &le; 0.5<br/>entropy = 0.961<br/>samples = 891<br/>value = [549, 342]<br/>class = 0>, fillcolor="#f5cfb4"] ;
+1 [label=<Pclass &le; 2.5<br/>entropy = 0.852<br/>samples = 353<br/>value = [98, 255]<br/>class = 1>, fillcolor="#85c3ef"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<Fare &le; 2.5<br/>entropy = 0.285<br/>samples = 181<br/>value = [9, 172]<br/>class = 1>, fillcolor="#43a2e6"] ;
+1 -> 2 ;
+3 [label=<entropy = 0.428<br/>samples = 80<br/>value = [7, 73]<br/>class = 1>, fillcolor="#4ca6e7"] ;
+2 -> 3 ;
+4 [label=<entropy = 0.14<br/>samples = 101<br/>value = [2, 99]<br/>class = 1>, fillcolor="#3d9fe6"] ;
+2 -> 4 ;
+5 [label=<Fare &le; 2.5<br/>entropy = 0.999<br/>samples = 172<br/>value = [89, 83]<br/>class = 0>, fillcolor="#fdf7f2"] ;
+1 -> 5 ;
+6 [label=<entropy = 0.993<br/>samples = 146<br/>value = [66, 80]<br/>class = 1>, fillcolor="#dceefa"] ;
+5 -> 6 ;
+7 [label=<entropy = 0.516<br/>samples = 26<br/>value = [23, 3]<br/>class = 0>, fillcolor="#e89153"] ;
+5 -> 7 ;
+8 [label=<Deck &le; 0.5<br/>entropy = 0.638<br/>samples = 538<br/>value = [451, 87]<br/>class = 0>, fillcolor="#ea995f"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<Age*Class &le; 3.5<br/>entropy = 0.499<br/>samples = 437<br/>value = [389, 48]<br/>class = 0>, fillcolor="#e89151"] ;
+8 -> 9 ;
+10 [label=<entropy = 0.552<br/>samples = 336<br/>value = [293, 43]<br/>class = 0>, fillcolor="#e99356"] ;
+9 -> 10 ;
+11 [label=<entropy = 0.284<br/>samples = 101<br/>value = [96, 5]<br/>class = 0>, fillcolor="#e68843"] ;
+9 -> 11 ;
+12 [label=<Fare &le; 0.5<br/>entropy = 0.962<br/>samples = 101<br/>value = [62, 39]<br/>class = 0>, fillcolor="#f5d0b6"] ;
+8 -> 12 ;
+13 [label=<entropy = 0.0<br/>samples = 8<br/>value = [8, 0]<br/>class = 0>, fillcolor="#e58139"] ;
+12 -> 13 ;
+14 [label=<entropy = 0.981<br/>samples = 93<br/>value = [54.0, 39.0]<br/>class = 0>, fillcolor="#f8dcc8"] ;
+12 -> 14 ;
+}
