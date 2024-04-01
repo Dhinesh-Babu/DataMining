@@ -33,8 +33,21 @@ The **Euclidean-K-means** method requires significantly more iterations and time
 ![[Pasted image 20240331201342.png]]
 **Cosine < Jaccard < Euclidean** 
 ### Task 5
-
-**Key takeaways:**
+**Key takeaways for this dataset:**
+1. Sum of Squared Errors (SSE):
+    - Cosine similarity outperformed the rest with the lowest SSE, suggesting a superior fit to the data over Euclidean and Jaccard.
+2. Accuracy:
+    - Cosine similarity yielded the highest accuracy consistently, confirming its effectiveness in precisely grouping data points according to the dominant label in each cluster.
+3. Iteration and Convergence:
+    - The Euclidean measure took the longest to reach convergence, hinting at potential computational inefficiencies in contrast to other measures.
+4. Stopping Conditions and SSEs:
+    - Cosine similarity maintained lower SSE values across various stopping conditions, underscoring its robustness and better clustering performance relative to Euclidean and Jaccard.
+5. Overall Insights:
+    - Cosine similarity stands out as the most advantageous for this particular dataset, with commendable lower SSEs, superior accuracy, and faster convergence rates.
+    - The traditional Euclidean measure falls short in efficiency for this dataset, evident from more iterations to convergence and higher SSEs.
+    - Jaccard's performance sits between Cosine and Euclidean regarding convergence speed and SSE, but it doesn't surpass Cosine in any evaluated aspect.
+  
+**Key takeaways in general:**
 
 1. **Choice of Distance Metric**: The performance of k-means is greatly influenced by the distance metric used. While Euclidean is standard, Cosine and Jaccard metrics can offer higher accuracy for certain data types, highlighting the importance of selecting a metric that aligns with the dataset's characteristics.
 
